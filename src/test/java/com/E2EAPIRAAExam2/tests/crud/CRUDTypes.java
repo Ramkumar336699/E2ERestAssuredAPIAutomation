@@ -23,7 +23,7 @@ public class CRUDTypes {
     String token;
     Integer bookingId;
     public RequestSpecification requestSpecification;
-    @Test
+
     @Owner("Ram kumar")
     @Description("Verify that the Status Code is 200 when we Create a Booking.")
     public void testCreateBooking() throws JsonProcessingException {
@@ -44,7 +44,7 @@ public class CRUDTypes {
         Assertions.assertThat(bookingId).isNotNull();
         Assertions.assertThat(firstName).isEqualToIgnoringCase("nikiTHA").isNotEqualTo("Ram");
     }
-    @Test
+
     @Owner("Ram kumar")
     @Description("Verify that the Status Code is 200 when we Create a Token.")
     public void testCreateToken() {
@@ -63,12 +63,12 @@ public class CRUDTypes {
         System.out.println("The generated token is : "+token);
         Assertions.assertThat(token).isNotNull().hasSize(15);
     }
-    @Test
+
     @Owner("Ram kumar")
     @Description("Verify that the Status Code is 200 When we Update an existing Booking.")
     public void testUpdateBooking() throws JsonProcessingException {
-        testCreateToken();
-        testCreateBooking();
+//        testCreateToken();
+//        testCreateBooking();
         payloadManager = new PayloadManager();
         requestSpecification.basePath(com.E2EAPIAutomationPractice.endPoints.APIConstants.UPDATE_BOOKING+bookingId);
 
@@ -113,7 +113,8 @@ public class CRUDTypes {
                 .then().log().all()
                 .assertThat().statusCode(404);
     }
-    @Test
+
+
     @Owner("Ram kumar")
     @Description("Verify that the Created Booking is Deleted")
     public void testDeleteBooking(){

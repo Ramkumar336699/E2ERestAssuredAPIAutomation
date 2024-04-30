@@ -68,7 +68,7 @@ public class IntegrationTest extends BaseTest {
 
     @Owner("Ram kumar")
     @Description("#TC03 - Verify that the Status Code is 200 When we Update an existing Booking.")
-    public void testUpdateBooking() throws JsonProcessingException {
+     public void testUpdateBooking() throws JsonProcessingException {
 
         testCreateToken();
         testCreateBooking();

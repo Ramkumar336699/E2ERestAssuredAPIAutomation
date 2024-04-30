@@ -1,14 +1,14 @@
 package com.E2EAPIRAAExam2.utils;
 
 import org.yaml.snakeyaml.Yaml;
-
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.InputStream;
 import java.util.Map;
 
-public class YamlReader {
+public class
+YamlReader {
 
     YamlReader(){
     }
@@ -23,7 +23,6 @@ public class YamlReader {
     /*public static void main(String[] args) throws FileNotFoundException {
         System.out.println(YamlReader.readKey("Url","Data.yaml"));
     }*/
-
 
 
 }

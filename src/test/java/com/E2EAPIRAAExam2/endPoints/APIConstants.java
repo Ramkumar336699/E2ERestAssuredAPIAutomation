@@ -3,6 +3,7 @@ package com.E2EAPIRAAExam2.endPoints;
 import com.E2EAPIRAAExam2.utils.FillowUtils;
 import com.E2EAPIRAAExam2.utils.PropertyReader;
 import com.E2EAPIRAAExam2.utils.YamlReader;
+//import com.E2EAPIRAAExam2.utils.YamlReader;
 
 import java.io.FileNotFoundException;
 
@@ -12,7 +13,7 @@ public class APIConstants {
 //    public static final String BASE_URL = "https://restful-booker.herokuapp.com";
 
     // Reading through PropertyReader File.......
-    /*public static String BASE_URL;
+   /* public static String BASE_URL;
     static {
         try {
             BASE_URL = PropertyReader.readyKey("baseUrl","config.properties");
